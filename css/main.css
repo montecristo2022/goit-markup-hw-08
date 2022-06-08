@@ -301,6 +301,8 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
+  height: 80vh;
+  width: 100vw;
 }
 
 .hide {

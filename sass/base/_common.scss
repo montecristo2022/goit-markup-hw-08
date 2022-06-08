@@ -1,37 +1,36 @@
 body {
-    color: $small-text-color;
+  color: $small-text-color;
 
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    line-height: 1.71;
-
-
-@media (min-width:480px) {
-        body {
-            background-color: red;
-        }
-    }
-
-    @media (min-width:800px) {
-        body {
-            background-color: orange;
-        }
-    }
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  height: 80vh;
+  width: 100vw;
 }
 
+// @media (min-width: 480px) {
+//   body {
+//     background-color: red;
+//   }
+// }
 
+// @media (min-width: 800px) {
+//   body {
+//     background-color: orange;
+//   }
+// }
 
 .hide {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
