@@ -1,0 +1,63 @@
+.contact__list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact__item {
+    margin-right: 50px;
+}
+
+.contact__item:last-child {
+    margin-right: 0px;
+}
+
+.contact__link {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-timing-function: $timing-function;
+    transition-duration: $timing-duraction;
+
+    &:hover {
+        color: $accent-color;
+    }
+
+    &:focus {
+        color: $accent-color;
+    }
+
+}
+
+
+
+
+.contact__link {
+&:hover .contact__icon {
+fill: $accent-color;
+}
+
+&:focus .contact__icon  {
+    fill: $accent-color;
+}
+   
+
+
+}
+
+.contact__icon {
+    margin-right: 10px;
+    fill: #757575;
+    transition-property: fill;
+    transition-timing-function: $timing-function;
+    transition-duration: $timing-duraction;
+
+
+}

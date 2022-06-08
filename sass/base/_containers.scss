@@ -1,0 +1,21 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+@include media(mobile) {
+        width: 480px;
+    }
+
+@include media(tablet){
+    width: 768px;
+}
+
+@include media(computer) {
+    width: 1200px;
+}
+
+}
+

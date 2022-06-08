@@ -1,0 +1,34 @@
+.feature__list{
+
+    --card-item: 4;
+    // @media screen and (min-width:768px) {
+    //     --card-item:2;
+        
+    // }
+    // @media screen and (min-width:1200px) {
+    //     --card-item:4;
+        
+    // }
+}
+
+
+.feature__icon {
+    border-radius: 4px;
+    display: flex;
+    background-color: #F5F4FA;
+    align-items: center;
+    justify-content: center;
+
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.feature__title {
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+color: $title-text-color;
+}

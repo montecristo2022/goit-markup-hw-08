@@ -1,0 +1,17 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+column-gap: var(--gap-left);
+row-gap: var(--gap-top);
+
+    
+}
+
+.card__item {
+    flex-basis: calc((100% - (var(--card-item) - 1) * var(--gap-left)) / var(--card-item) );
+    // flex-basis: calc((100% - (кількість елеменів - 1) * ширина відступа) / кількість елементів );
+    // 100% - ширина списку
+    // (кількість елеменів - 1) - кількість відступів
+    // (кількість елеменів - 1) * ширина відступа - ширина всіх відступів
+  
+}
