@@ -6,7 +6,21 @@ body {
     font-size: 14px;
     line-height: 1.71;
 
+
+@media (min-width:480px) {
+        body {
+            background-color: red;
+        }
+    }
+
+    @media (min-width:800px) {
+        body {
+            background-color: orange;
+        }
+    }
 }
+
+
 
 .hide {
     position: absolute;
