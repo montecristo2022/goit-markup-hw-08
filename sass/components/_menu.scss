@@ -1,0 +1,29 @@
+.menu-container {
+  background-color: #ffffff;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+
+.menu-navigation {
+  font-size: 40px;
+  line-height: 1.17;
+}
+
+.menu-navigation__item {
+  list-style: none;
+}
+
+.menu-navigation__item:not(:last-child) {
+  margin: bottom 32px;
+}
+
+.menu-navigation__link--current {
+  text-decoration: none;
+  color: $accent-color;
+}
+
+.menu-navigation__link {
+  color: #212121;
+
+  text-decoration: none;
+}

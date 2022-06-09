@@ -1,19 +1,35 @@
 .page-header {
-    border-bottom: 1px solid #ECECEC;
-            font-weight: 500;
-            
-                line-height: 1.15;
-                letter-spacing: 0.02em;
-                .logo {
-                    margin-right: 93px;
-                }
+  border-bottom: 1px solid #ececec;
+  font-weight: 500;
+
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .page-header__container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 
+.menu-button .icon-cross {
+  display: none;
+}
 
+.menu-button.is-open .icon-cross {
+  display: block;
+}
 
+.menu-button.is-open .icon-menu {
+  display: none;
+}
