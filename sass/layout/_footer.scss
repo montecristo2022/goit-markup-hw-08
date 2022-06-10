@@ -30,6 +30,10 @@
 
 .footer__item:not(:last-child) {
   margin-right: 70px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+  }
 }
 
 .footer__item:last-child {
@@ -69,6 +73,11 @@
   line-height: 1.14;
   margin-bottom: 20px;
   font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
 
 .footer__form {
