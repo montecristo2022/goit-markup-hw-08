@@ -1,19 +1,23 @@
 .logo {
-    display: block;
-    color: $accent-color;
-        font-family: Raleway, sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        text-decoration: none;
+  display: block;
+  color: $accent-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 
-          
+  @media screen and (max-width: 767.98px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 0px;
+  }
 }
 
 .logo--accent {
-    color: #000000;
+  color: #000000;
 }
 
 .logo--accent-footer {
-    color: white;
+  color: white;
 }

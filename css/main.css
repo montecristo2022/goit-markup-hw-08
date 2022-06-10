@@ -386,6 +386,14 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767.98px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 0px;
+  }
+}
+
 .logo--accent {
   color: #000000;
 }
@@ -404,6 +412,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 767.98px) {
+  .navigation__list {
+    display: none;
+  }
+}
+
 .navigation__link--current::after {
   position: absolute;
   bottom: 0;
@@ -411,7 +425,7 @@ body {
   width: 100%;
   content: "";
   height: 4px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   border-radius: 2px;
   bottom: -1px;
 }
@@ -474,6 +488,12 @@ body {
 .contact__list {
   display: flex;
   margin-left: auto;
+}
+
+@media (max-width: 767.98px) {
+  .contact__list {
+    display: none;
+  }
 }
 
 .contact__item {
@@ -544,7 +564,13 @@ body {
 }
 
 .button:hover, .button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    margin-top: 20px;
+  }
 }
 
 .cosial-media {
@@ -959,6 +985,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__list {
+    --card-item: 4;
+  }
+}
+
 .team__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1186,6 +1218,15 @@ body {
   display: flex;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
@@ -1200,13 +1241,22 @@ body {
   }
 }
 
-.footer__item:not(:last-child) {
-  margin-right: 70px;
+@media screen and (min-width: 480px) {
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .footer__item:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .footer__item {
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__item:not(:last-child) {
+    margin-right: 70px;
   }
 }
 
