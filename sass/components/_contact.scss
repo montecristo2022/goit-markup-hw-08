@@ -5,6 +5,10 @@
   @media (max-width: 767.98px) {
     display: none;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: block;
+  }
 }
 
 .contact__item {
@@ -22,8 +26,9 @@
   align-items: center;
   text-decoration: none;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  margin-bottom: 10px;
 
   transition-property: color;
   transition-timing-function: $timing-function;
@@ -35,6 +40,11 @@
 
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

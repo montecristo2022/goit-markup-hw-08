@@ -496,6 +496,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contact__list {
+    display: block;
+  }
+}
+
 .contact__item {
   margin-right: 50px;
 }
@@ -509,8 +515,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-bottom: 10px;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 1000ms;
@@ -522,6 +527,13 @@ body {
 
 .contact__link:focus {
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contact__link:hover .contact__icon {
@@ -1218,26 +1230,17 @@ body {
   display: flex;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: block;
     text-align: center;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__label {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -1305,6 +1308,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .footer__form {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1198.98px) {
+  .footer__form {
+    display: block;
+  }
 }
 
 .footer__input {
