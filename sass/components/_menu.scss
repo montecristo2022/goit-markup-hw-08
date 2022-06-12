@@ -2,6 +2,29 @@
   background-color: #ffffff;
   padding-top: 48px;
   padding-left: 40px;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .menu-navigation {
@@ -26,4 +49,30 @@
   color: #212121;
 
   text-decoration: none;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button {
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
 }

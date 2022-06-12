@@ -28,7 +28,6 @@
 
   //   padding-top: 32px;
   //   padding-bottom: 32px;
-  margin-bottom: 10px;
 
   transition-property: color;
   transition-timing-function: $timing-function;
@@ -40,6 +39,10 @@
 
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 10px;
   }
 
   @media screen and (min-width: 1200px) {

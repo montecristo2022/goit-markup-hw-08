@@ -326,7 +326,7 @@ body {
 }
 
 .card__item {
-  flex-basis: calc((100% - (var(--card-item) - 1) * var(--gap-left)) / var(--card-item));
+  flex-basis: calc( (100% - (var(--card-item) - 1) * var(--gap-left)) / var(--card-item));
 }
 
 .section {
@@ -460,6 +460,30 @@ body {
   background-color: #ffffff;
   padding-top: 48px;
   padding-left: 40px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.menu-container.is-open {
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-navigation {
@@ -483,6 +507,32 @@ body {
 .menu-navigation__link {
   color: #212121;
   text-decoration: none;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .contact__list {
@@ -515,7 +565,6 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-bottom: 10px;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 1000ms;
@@ -527,6 +576,12 @@ body {
 
 .contact__link:focus {
   color: #2196F3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contact__link {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -848,6 +903,7 @@ body {
 }
 
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   font-weight: 500;
   line-height: 1.15;
@@ -861,26 +917,6 @@ body {
 .page-header__container {
   display: flex;
   align-items: center;
-}
-
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 
 .hero {
