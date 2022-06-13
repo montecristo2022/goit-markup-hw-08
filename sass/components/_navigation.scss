@@ -53,6 +53,10 @@
   color: $accent-color;
 }
 
+.menu-navigation__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 // &--current {
 //     color: $accent-color;
 // }
