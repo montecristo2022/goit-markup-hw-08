@@ -327,6 +327,10 @@ body {
   overflow: hidden;
 }
 
+img {
+  width: 100%;
+}
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -666,7 +670,7 @@ body {
   background-color: #188ce8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199.98px) {
   .button {
     margin-top: 20px;
   }
@@ -1307,7 +1311,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__container {
-    display: block;
+    flex-wrap: wrap;
     text-align: center;
   }
 }
@@ -1322,6 +1326,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer__item {
     margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1333,6 +1338,7 @@ body {
 
 .footer__item:last-child {
   margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__contact-item:not(:last-child) {
@@ -1365,7 +1371,7 @@ body {
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199.98px) {
   .footer__title {
     margin-top: 60px;
     text-align: center;
