@@ -22,7 +22,7 @@
     @media screen and (min-width: $computer) {
       @content;
     }
-  } @else if $range == no-computer {
+  } @else if $range == noComputer {
     @media (max-width:#{$computer - 0.02}) {
       @content;
     }

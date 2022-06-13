@@ -2,21 +2,23 @@
   display: flex;
   margin-left: auto;
 
-  @media (max-width: 767.98px) {
+  @include media(mobile-only) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  @include media(tablet-only) {
     display: block;
   }
 }
 
-.contact__item {
-  margin-right: 50px;
-}
+.contact__item:not(:last-child) {
+  @include media(tablet-only) {
+    margin-bottom: 10px;
+  }
 
-.contact__item:last-child {
-  margin-right: 0px;
+  @include media(computer) {
+    margin-right: 50px;
+  }
 }
 
 .contact__link {
@@ -41,11 +43,7 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    margin-bottom: 10px;
-  }
-
-  @media screen and (min-width: 1200px) {
+  @include media(computer) {
     padding-top: 32px;
     padding-bottom: 32px;
   }

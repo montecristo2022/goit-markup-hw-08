@@ -6,7 +6,16 @@
   line-height: 1.15;
   letter-spacing: 0.02em;
   .logo {
-    margin-right: 93px;
+    @include media(mobile-only) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    @include media(tablet) {
+      margin-right: 88px;
+    }
+    @include media(computer) {
+      margin-right: 93px;
+    }
   }
 }
 

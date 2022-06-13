@@ -1,14 +1,8 @@
 .feature__list {
-  --card-item: 4;
-
-  @media screen and (min-width: 480px) {
-    --card-item: 1;
-  }
-
-  @media screen and (min-width: 768px) {
+  @include media(tablet) {
     --card-item: 2;
   }
-  @media screen and (min-width: 1200px) {
+  @include media(computer) {
     --card-item: 4;
   }
 }
@@ -31,6 +25,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $title-text-color;
+
+  @include media(mobile-only) {
+    text-align: center;
+  }
 
   //   @media screen and (min-width: 480px) {
   //     text-align: center;

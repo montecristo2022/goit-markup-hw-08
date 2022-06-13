@@ -1,19 +1,17 @@
 .portfolio__filter-list {
   display: flex;
-  justify-content: center;
+  row-gap: 15px;
+  column-gap: 8px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 
-  margin-bottom: 50px;
-  gap: 8px;
-
-  @media screen and (min-width: 480px) {
-    // --card-item: 3;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+  @include media(tablet) {
+    justify-content: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include media(computer) {
     margin-bottom: 50px;
+    gap: 8px;
   }
 }
 
@@ -82,6 +80,7 @@
   transition-property: box-shadow;
   transition-duration: $timing-duraction;
   transition-timing-function: $timing-function;
+  height: 100%;
 
   &:hover,
   &:focus {
@@ -100,6 +99,7 @@
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .portfolio__title {
@@ -117,15 +117,11 @@
 }
 
 .portfolio__list {
-  @media screen and (min-width: 480px) {
-    --card-item: 1;
-  }
-
-  @media screen and (min-width: 768px) {
+  @include media(tablet) {
     --card-item: 2;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include media(computer) {
     --card-item: 3;
   }
 }

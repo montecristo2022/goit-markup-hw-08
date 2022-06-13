@@ -1,7 +1,12 @@
 .navigation {
   display: flex;
+
   align-items: center;
   color: $title-text-color;
+  @include media(mobile-only) {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .navigation__list {

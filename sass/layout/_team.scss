@@ -3,17 +3,11 @@
 }
 
 .team__list {
-  --card-item: 4;
-
-  @media screen and (min-width: 480px) {
-    --card-item: 1;
-  }
-
-  @media screen and (min-width: 768px) {
+  @include media(tablet) {
     --card-item: 2;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include media(computer) {
     --card-item: 4;
   }
 }

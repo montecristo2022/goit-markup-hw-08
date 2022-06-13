@@ -12,60 +12,56 @@
 }
 
 .footer__container {
-  align-items: baseline;
-  display: flex;
+  display: block;
 
-  @media screen and (min-width: 480px) and (max-width: 767.98px) {
-    display: block;
-    // flex-wrap: wrap;
-    // flex-direction: column;
+  @include media(noComputer) {
     text-align: center;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  @include media(tablet) {
     flex-wrap: wrap;
-    text-align: center;
+
+    align-items: baseline;
+    display: flex;
   }
+
+  // @include media(tablet) and (max-width: 1199.98px) {
+
+  // }
 }
 
 // .footer__label {
-//   @media screen and (min-width: 768px) {
+//   @include media(tablet) {
 //     display: flex;
 //     flex-direction: column;
 //   }
 // }
 
 .footer__item {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    // text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
 
-  @media screen and (min-width: 768px) {
+  @include media(tablet-only) {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  @media screen and (max-width: 1199.98) {
-    // display: flex;
-    // text-align: center;
   }
 }
 
 .footer__item:not(:last-child) {
-  @media screen and (min-width: 1200px) {
+  @include media(noComputer) {
+    margin-bottom: 60px;
+  }
+  @include media(computer) {
     margin-right: 70px;
   }
-  // @media screen and (min-width: 768px) {
+  // @include media(tablet) {
   //   margin-left: auto;
   // }
 }
 
 .footer__item:last-child {
-  margin-left: auto;
-  margin-right: auto;
+  @include media(computer) {
+    margin-left: auto;
+  }
 }
 
 .footer__contact-item:not(:last-child) {
@@ -101,11 +97,6 @@
   line-height: 1.14;
   margin-bottom: 20px;
   font-weight: 700;
-
-  @media screen and (max-width: 1199.98px) {
-    margin-top: 60px;
-    text-align: center;
-  }
 }
 
 .footer__form {
@@ -113,12 +104,19 @@
   flex-wrap: wrap;
   align-items: flex-end;
 
-  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+  @include media(mobile-only) {
     display: block;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1198.98px) {
+  @include media(tablet-only) {
     display: block;
+  }
+}
+.footer__label {
+  display: block;
+  @include media(noComputer) {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -127,8 +125,6 @@
   padding-bottom: 15px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
-  width: 358px;
 
   height: 50px;
   background-color: inherit;
@@ -141,8 +137,16 @@
     border: 1px solid #2196f3;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include media(mobile-only) {
+    max-width: 358px;
+    width: 100%;
+  }
+  @include media(tablet) {
+    width: 450px;
+  }
+  @include media(computer) {
     margin-right: 12px;
+    width: 358px;
   }
 }
 

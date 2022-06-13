@@ -1,29 +1,7 @@
 .about {
   padding-top: 0px;
-  // position: relative;
-  // &::before{
-  //     position: absolute;
-  //     content: '';
-  //     display: block;
-  //     width: 30px;
-  //     height: 30px;
-  //     background-color: red;
-
-  //     @include media(mobile-only){
-  //     bottom: 0;
-  //         right: 15px;
-
-  //     }
-  //     @include media(tablet){
-  //         top: 0;
-  //         left: 15px;
-
-  //     }
-  // }
-}
-
-.about {
-  @media (max-width: 1199.98px) {
+  --card-item: 3;
+  @include media(noComputer) {
     display: none;
   }
 }
