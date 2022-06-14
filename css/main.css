@@ -469,7 +469,7 @@ img {
   text-decoration: none;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 .navigation__link--current,
@@ -529,7 +529,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
-  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-button:hover, .menu-button:focus {
@@ -634,7 +634,7 @@ img {
   text-decoration: none;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 .contact__link:hover {
@@ -665,7 +665,7 @@ img {
   fill: #757575;
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 .button {
@@ -687,7 +687,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   transition-property: background-color;
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -715,7 +715,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 .cosial-media__link:hover, .cosial-media__link:focus {
@@ -726,7 +726,7 @@ img {
   fill: #AFB1B8;
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 .cosial-media__link:hover .cosial-media__svg,
@@ -760,7 +760,7 @@ img {
   max-width: 528px;
   width: 100%;
   min-height: 581px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -769,7 +769,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
   transition-property: transform;
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -781,7 +781,7 @@ img {
 }
 
 .modal_agreement--text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -792,8 +792,8 @@ img {
 
 .modal__offers {
   text-decoration: none;
-  color: #2196F3;
-  border-bottom: 1px solid #2196F3;
+  color: #2196f3;
+  border-bottom: 1px solid #2196f3;
 }
 
 .visually-hiden {
@@ -831,12 +831,12 @@ img {
   width: 11px;
   height: 11px;
   transition-property: fill;
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__close-button:hover .modal__close-icon {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 .modal__form-text {
@@ -866,7 +866,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   color: #757575;
@@ -880,7 +880,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -890,8 +890,8 @@ img {
   left: 15px;
   margin-right: 15px;
   transition-property: fill;
-  transition-duration: 1000ms;
-  transition-timing-function: var(--timing-function);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__input:focus,
@@ -916,8 +916,8 @@ img {
   outline: 0;
   resize: none;
   transition-property: border;
-  transition-duration: 1000ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .text-area::placeholder {
@@ -943,14 +943,14 @@ img {
 }
 
 .checkbox:checked + .modal-checkbox {
-  border-color: #2196F3;
-  background-color: #2196F3;
-  color: #FFFFFF;
+  border-color: #2196f3;
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .checkbox:hover + .modal-checkbox,
 .checkbox:focus + .modal-checkbox {
-  border: 2px solid #2196F3;
+  border: 2px solid #2196f3;
 }
 
 .modal-checkbox-icon {
@@ -1177,8 +1177,8 @@ img {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   transition-property: border;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
 }
 
 .partners__link:hover .partners__icon,
@@ -1195,7 +1195,7 @@ img {
   fill: #afb1b8;
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 .portfolio__filter-list {
@@ -1235,7 +1235,7 @@ img {
   border: none;
   transition-property: color, box-shadow, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 .portfolio__filter-btn:hover, .portfolio__filter-btn:focus, .portfolio__filter-btn--active {
@@ -1259,7 +1259,7 @@ img {
   line-height: 1.55;
   overflow: hidden;
   transition-property: background-color, transform, opacity;
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1275,7 +1275,7 @@ img {
   flex-direction: column;
   outline: none;
   transition-property: box-shadow;
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
 }
@@ -1392,7 +1392,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: 300ms;
 }
 
 .footer__contact-link[target="_blank"] {

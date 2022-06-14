@@ -21,8 +21,8 @@
 
   transition-property: border;
 
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-duration: $timing-duraction;
+  transition-timing-function: $timing-function;
 
   &:hover .partners__icon,
   &:focus .partners__icon {
@@ -38,6 +38,6 @@
 .partners__icon {
   fill: #afb1b8;
   transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
+  transition-timing-function: $timing-function;
+  transition-duration: $timing-duraction;
 }
